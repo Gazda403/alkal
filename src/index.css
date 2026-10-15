@@ -1,0 +1,67 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: 'Space Grotesk', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-sans: 'Plus Jakarta Sans', sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+  --color-editorial-bg: #F4F3EF;
+  --color-editorial-bg-card: #FFFFFF;
+  --color-editorial-border: #D8D6CE;
+  --color-editorial-border-light: #E7E5DD;
+  --color-editorial-slate: #0F172A;
+  --color-editorial-charcoal: #1E293B;
+  --color-editorial-muted: #64748B;
+  --color-editorial-accent: #2563EB;
+}
+
+@layer base {
+  html {
+    font-family: var(--font-sans);
+    background-color: var(--color-editorial-bg);
+    color: var(--color-editorial-slate);
+    scroll-behavior: smooth;
+  }
+
+  h1, h2, h3, h4, .font-heading {
+    font-family: var(--font-display);
+    letter-spacing: -0.03em;
+  }
+
+  .font-tech {
+    font-family: var(--font-mono);
+  }
+}
+
+/* Custom architectural hairline grid lines */
+.grid-hairline {
+  border-color: #D8D6CE;
+}
+
+/* Crosshair glyph */
+.crosshair-corner {
+  position: absolute;
+  font-family: var(--font-mono);
+  font-size: 10px;
+  line-height: 1;
+  color: #94A3B8;
+  pointer-events: none;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #ECEAE4;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #94A3B8;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #0F172A;
+}
