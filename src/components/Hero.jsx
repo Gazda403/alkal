@@ -63,9 +63,8 @@ export default function Hero({ onOpenQuoteModal }) {
         <div className="mb-8 sm:mb-12">
           <div className="max-w-5xl">
             <h1 className="font-heading text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-black uppercase text-[#0F172A] tracking-[-0.03em] leading-[1.02] sm:leading-[0.94] mb-4 sm:mb-6">
-              ARHITEKTONSKA <br />
-              PRECIZNOST. <br />
-              <span className="text-slate-500 font-light italic">ALU & PVC STOLARIJA</span> <br />
+              BEZ KOMPROMISA. <br />
+              <span className="text-slate-500 font-light italic">ALU &amp; PVC STOLARIJA</span> <br />
               ZA CIJELI ŽIVOT.
             </h1>
 
